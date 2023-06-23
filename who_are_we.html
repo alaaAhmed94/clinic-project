@@ -11,13 +11,29 @@
     <link rel="stylesheet" href="smart/assets/smart.css">
     <link rel="stylesheet" href="smart/style.css">
 
+
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8qAF_yW9o1XgGkIEs");
+        })();
+    </script>
+    <!-- emailjs -->
+
+
+
 </head>
 
 <body>
     <!-- start header -->
     <header>
         <div class="logo_links">
-            <a href="index.html"><img class="logo" src="images/77790e10-8030-419a-9f19-83fb4de95889.jfif" alt=""></a>
+            <a class="logos" href="index.html">
+                <img class="logo" src="images/Mask Group -1.png" alt="">
+                <img class="logo_two" src="images/Mask Group -2.png" alt="">
+            </a>
             <ul>
                 <li>
                     <a class="link border_bottom" href="index.html">الصفحه الرائيسيه</a>
@@ -89,7 +105,55 @@
 
     <!-- end section  -->
 
+    <!-- start All majors -->
+    <div class="all_majors">
+        <div class="all_majors_card">
+            <div class="all_majors_box">
+                <img src="images/icon-doctor.484ada8@2x.png" alt="">
+                <h3>عيادات العنايه</h3>
+            </div>
+            <div class="all_majors_box">
+                <img src="images/icon-clinic.ea609ff@2x.png" alt="">
+                <h3>اطباء متمرسون</h3>
+            </div>
+            <div class="all_majors_box">
+                <img src="images/Group 2825.png" alt="">
+                <h3>الفروع</h3>
+            </div>
+            <div class="all_majors_box">
+                <img src="images/Group 2807@2x.png" alt="">
+                <h3>الموظفون</h3>
+            </div>
+        </div>
+    </div>
+    <!-- end All majors -->
 
+
+    <!-- start section contact_us  -->
+    <section class="contact_us who_are_we_and_contact_use">
+        <div class="contact">
+            <h2 class="who_are_we_and_contact_use_h2">اتصل بنا</h2>
+            <form>
+                <input class="w2" type="text" name="" placeholder="الاسم" id="user_name">
+                <input class="w2" type="text" name="" placeholder="تلفون" id="user_phone">
+                <input class="w2" type="email" name="" placeholder="البريد الإلكتروني" id="user_email">
+                <select class="w2" name="" id="option">
+                    <option value="اختر الفرع الأقرب إليك">اختر الفرع الأقرب إليك</option>
+                    <option value="الجيزة">الجيزة</option>
+                    <option value="الهرم">الهرم</option>
+                    <option value="القاهرة">القاهرة</option>
+                    <option value="سيناء">سيناء</option>
+                    <option value="حلوان">حلوان</option>
+                </select>
+                <textarea name="" id="maseg" placeholder="الرسالة" cols="30" rows="10"></textarea>
+                <button class="btn_appointment  link_submit" type="button" onclick="sendMail()">ارسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+    <!-- end section contact_us -->
+
+
+    <hr>
 
     <!-- start footer -->
     <footer>
